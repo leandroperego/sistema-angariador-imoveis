@@ -23,8 +23,8 @@ function App() {
               ? (
                   <>
                     <Route path='/' element={<Login />}/>
-                    <Route path='/registrar' element={<Registration />}/>
-                    <Route path='/*' element={<Login />}/>
+                    <Route path='registrar' element={<Registration />}/>
+                    <Route path='*' element={<Login />}/>
                   </>
                 )
               : (

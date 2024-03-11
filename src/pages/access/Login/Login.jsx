@@ -7,6 +7,7 @@ import { toConnect } from "../../../infra/users";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { userContext } from "../../../App";
+import { Link } from "react-router-dom";
 
 const initialValues = {
   email: "",
