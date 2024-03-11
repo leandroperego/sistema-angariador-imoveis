@@ -1,0 +1,21 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.itensMenu{
+    text-decoration: none;
+    color: black;
+    border-radius: 15px;
+    padding: 16px;
+    width: 100%;
+}
+
+.itensMenu:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
