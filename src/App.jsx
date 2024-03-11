@@ -30,7 +30,7 @@ function App() {
               : (
                 <Route path='/' element={<Layout />} >
                   <Route index element={<Home />}/>
-                  <Route path='Listagem' element={<Listagem />}/>
+                  <Route path='listagem-de-contatos' element={<Listagem />}/>
                   <Route path='cadastro' element={<Cadastro />}/>
                   <Route path='home' element={<Home />}/>
                   <Route path='*' element={<Home />}/>
