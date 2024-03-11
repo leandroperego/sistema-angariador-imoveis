@@ -4,7 +4,7 @@ import "../Access.css";
 import { Button } from "react-bootstrap";
 import { registrationSchema } from "./RegistrationSchema";
 import { registerUser } from "../../../infra/users";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const initialValues = {
   first: "",
@@ -175,7 +175,7 @@ const Registration = () => {
                       <div className="row mt-3">
                         <br />
                         <div className="col text-right">
-                          Já tem conta? <a href="/login">Faça login</a>
+                          Já tem conta? <Link to={'/login'}>Faça login</Link>
                         </div>
                       </div>
                     </form>
