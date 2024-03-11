@@ -20,13 +20,10 @@ export default function ListaCards(){
     return (
         <ListGroup style={{display: 'flex', flexDirection: 'column', gap: '20px'}}>
             {
-                listaImoveis?.map((dados, index) => {
-                    return (
-                        <ListGroup.Item style={{border: 'none'}} key={index}>
-                            <CardContato dados={dados} />
-                        </ListGroup.Item>
-                    );
-                })
+                listaImoveis?.map((dados, index) =>
+                    <ListGroup.Item style={{border: 'none'}} key={index}>
+                        <CardContato dados={dados} />
+                    </ListGroup.Item>)
             }
             <ListGroup.Item></ListGroup.Item>
         </ListGroup>

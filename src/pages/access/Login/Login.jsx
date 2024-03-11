@@ -36,7 +36,6 @@ const Login = () => {
               id: user.id,
               name: user.nome,
               email: user.email,
-              password: user.password,
             });
           })
           .finally(() => {
@@ -123,7 +122,7 @@ const Login = () => {
                       <div className="row mt-3">
                         <br />
                         <div className="col text-right">
-                          Ainda não tem conta? <a href="/registrar">Faça seu cadastro</a>
+                          Ainda não tem conta? <Link to='/registrar'>Faça seu cadastro</Link>
                         </div>
                       </div>
                     </form>

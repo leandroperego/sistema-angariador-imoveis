@@ -12,7 +12,7 @@ export const userContext = createContext();
 
 function App() {
 
-  const [user, setUser] = useState({ id: '', name: '', email: '', password: '' });
+  const [user, setUser] = useState({ id: '', name: '', email: ''});
 
   return (
     <userContext.Provider value={{ user, setUser}}>
@@ -23,7 +23,7 @@ function App() {
               ? (
                   <>
                     <Route path='/' element={<Login />}/>
-                    <Route path='Registrar' element={<Registration />}/>
+                    <Route path='registrar' element={<Registration />}/>
                     <Route path='*' element={<Login />}/>
                   </>
                 )
@@ -33,7 +33,7 @@ function App() {
                   <Route path='Listagem' element={<Listagem />}/>
                   <Route path='cadastro' element={<Cadastro />}/>
                   <Route path='home' element={<Home />}/>
-                  <Route path='*' element={<Listagem />}/>
+                  <Route path='*' element={<Home />}/>
                 </Route>
               )
           }
