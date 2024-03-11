@@ -16,7 +16,7 @@ function App() {
 
   return (
     <userContext.Provider value={{ user, setUser}}>
-      <Router>
+      <Router basename='/sistema-angariador-imoveis'>
         <Routes>
           {
             !user.id 
