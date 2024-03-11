@@ -122,7 +122,7 @@ const Login = () => {
                       <div className="row mt-3">
                         <br />
                         <div className="col text-right">
-                          Ainda não tem conta? <Link to='/registrar'>Faça seu cadastro</Link>
+                          Ainda não tem conta? <Link to={'/registrar'}>Faça seu cadastro</Link>
                         </div>
                       </div>
                     </form>

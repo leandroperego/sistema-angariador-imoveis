@@ -14,7 +14,7 @@ export default function AsideMenu(){
     const handleLogout = () => {
         toDisconnect();
         navigate('/');
-        setUser({ 'id': '', 'nome': '', 'email': '', 'senha': '' });
+        setUser({ 'id': '', 'nome': '', 'email': '' });
     }
 
     return (
